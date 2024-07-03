@@ -1,7 +1,7 @@
-package KedelidzeKrutyakov.deal.store.entities;
+package KedelidzeKrutyakov.deal.persistence.entity;
 
-import KedelidzeKrutyakov.deal.store.enums.Gender;
-import KedelidzeKrutyakov.deal.store.enums.MartialStatus;
+import KedelidzeKrutyakov.deal.enums.Gender;
+import KedelidzeKrutyakov.deal.enums.MartialStatus;
 
 import jakarta.persistence.*;
 import lombok.Data;

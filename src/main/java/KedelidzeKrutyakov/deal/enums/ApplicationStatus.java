@@ -1,4 +1,4 @@
-package KedelidzeKrutyakov.deal.store.enums;
+package KedelidzeKrutyakov.deal.enums;
 
 public enum ApplicationStatus {
     PREAPPROVAL, APPROVED, CC_DENIED, CC_APPROVED, PREPARE_DOCUMENTS,

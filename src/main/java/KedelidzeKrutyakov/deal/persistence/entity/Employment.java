@@ -1,7 +1,7 @@
-package KedelidzeKrutyakov.deal.store.entities;
+package KedelidzeKrutyakov.deal.persistence.entity;
 
-import KedelidzeKrutyakov.deal.store.enums.EmploymentStatus;
-import KedelidzeKrutyakov.deal.store.enums.Position;
+import KedelidzeKrutyakov.deal.enums.EmploymentStatus;
+import KedelidzeKrutyakov.deal.enums.Position;
 
 import java.io.Serializable;
 import java.math.BigDecimal;

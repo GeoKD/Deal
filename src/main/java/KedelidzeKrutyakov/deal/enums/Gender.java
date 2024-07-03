@@ -1,4 +1,4 @@
-package KedelidzeKrutyakov.deal.store.enums;
+package KedelidzeKrutyakov.deal.enums;
 
 public enum Gender {
     MALE, FEMALE, NON_BINARY
