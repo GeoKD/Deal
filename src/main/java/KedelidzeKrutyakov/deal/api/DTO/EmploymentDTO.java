@@ -1,14 +1,15 @@
-package KedelidzeKrutyakov.deal.persistence.entity;
+package KedelidzeKrutyakov.deal.api.DTO;
 
 import KedelidzeKrutyakov.deal.enums.EmploymentStatus;
 import KedelidzeKrutyakov.deal.enums.Position;
 import lombok.Data;
 
-import java.io.Serializable;
 import java.math.BigDecimal;
+import java.time.Period;
+
 
 @Data
-public class Employment implements Serializable {
+public class EmploymentDTO {
     private EmploymentStatus employmentStatus;
     private String employerINN;
     private BigDecimal salary;
