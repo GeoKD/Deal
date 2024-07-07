@@ -1,18 +1,29 @@
-package KedelidzeKrutyakov.deal.store.entities;
+package KedelidzeKrutyakov.deal.persistence.entity;
 
-import KedelidzeKrutyakov.deal.store.enums.Gender;
-import KedelidzeKrutyakov.deal.store.enums.MartialStatus;
+import KedelidzeKrutyakov.deal.enums.Gender;
+import KedelidzeKrutyakov.deal.enums.MartialStatus;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.hibernate.annotations.JdbcTypeCode;
 import org.hibernate.type.SqlTypes;
 
 import java.time.LocalDate;
 
+
 @Data
 @Entity
-@Table(name = "client")
+@Table(
+    name = "client",
+    uniqueConstraints = @UniqueConstraint(
+            columnNames = {"email", "passportNumber"}
+    ))
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class Client {
 
     @Id
