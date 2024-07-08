@@ -1,13 +1,15 @@
-МС Сделка
+'''
+# МС Сделка
 
-API:
-POST: /deal/application - расчёт возможных условий кредита. Request - LoanApplicationRequestDTO, response - List<LoanOfferDTO>
-PUT: /deal/offer - Выбор одного из предложений. Request LoanOfferDTO, response void.
-PUT: /deal/calculate/{applicationId} - завершение регистрации + полный подсчёт кредита. Request - FinishRegistrationRequestDTO, param - Long, response void.
+## API:
+POST: /deal/application - расчёт возможных условий кредита. Request - LoanApplicationRequestDTO, response - List<LoanOfferDTO>  
+PUT: /deal/offer - Выбор одного из предложений. Request LoanOfferDTO, response void.  
+PUT: /deal/calculate/{applicationId} - завершение регистрации + полный подсчёт кредита. Request - FinishRegistrationRequestDTO, param - Long, response void.  
 
-Примеры запросов:
+## Примеры запросов:
 
 1. POST: http://localhost:8081/deal/application
+```
 {
   "amount": 100000,
   "term": 12,
@@ -19,8 +21,10 @@ PUT: /deal/calculate/{applicationId} - завершение регистраци
   "passportSeries": "1234",
   "passportNumber": "567890"
 }
+```
 
 Вывод:
+```
 [
     {
         "applicationId": 1,
@@ -63,8 +67,10 @@ PUT: /deal/calculate/{applicationId} - завершение регистраци
         "salaryClient": true
     }
 ]
+```
 
 2. PUT: http://localhost:8081/deal/offer
+```
 {
         "applicationId": 1,
         "requestedAmount": 100000,
@@ -75,8 +81,10 @@ PUT: /deal/calculate/{applicationId} - завершение регистраци
         "insuranceEnabled": false,
         "salaryClient": false
 }
+```
 
 3. PUT: http://localhost:8081/deal/calculate/1
+```
 {
     "gender" : "MALE",
     "martialStatus" : "SINGLE",
@@ -93,3 +101,4 @@ PUT: /deal/calculate/{applicationId} - завершение регистраци
     },
     "account" : "123123123123"
 }
+```
