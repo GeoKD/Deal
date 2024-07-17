@@ -12,9 +12,9 @@ PUT: /deal/calculate/{applicationId} - завершение регистраци
 {
   "amount": 100000,
   "term": 12,
-  "firstName": "Иван",
-  "lastName": "Иванов",
-  "middleName": "Иванович",
+  "firstName": "Ivan",
+  "lastName": "Ivanov",
+  "middleName": "Ivanovich",
   "email": "ivanov@example.com",
   "birthdate": "1990-01-01",
   "passportSeries": "1234",
